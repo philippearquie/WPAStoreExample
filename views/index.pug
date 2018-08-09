@@ -1,0 +1,8 @@
+extends layout
+include itemdisplay.pug
+block content
+  h1= title
+  #items
+    - var n=0
+    while n<6
+      +itembody(++n)
